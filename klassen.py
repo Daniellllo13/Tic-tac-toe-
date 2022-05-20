@@ -19,6 +19,8 @@ class Player:
                     players.append(player_name)
                     Player(player_name, Wins)
                 return players
+            elif counter != 1 or counter !=2: 
+                print("Dubbelkolla att du följer instruktionerna fullt ut")
             else:
                 print("Dubbelkolla att ni är max 2 och minst 1 ")
 
