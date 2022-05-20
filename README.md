@@ -29,10 +29,7 @@ I have only used python, therefore no other languages ​​are involved
 
 ***Vad krävs för att köra ditt program? Lista bara kraven.***
 Only python 3.7 + is requierd to make my code process
-- Python 3.7+ 
-- pygame module
-- Flask module
-- React library
+
 
 ## Installation
 
