@@ -29,10 +29,7 @@ I have only used python, therefore no other languages ​​are involved
 
 ***Vad krävs för att köra ditt program? Lista bara kraven.***
 Only python 3.7 + is requierd to make my code process
-- Python 3.7+ 
-- pygame module
-- Flask module
-- React library
+
 
 ## Installation
 
@@ -62,12 +59,14 @@ pip install pygame
 ***Detta är överkurs, men här kan du lista exempelvis hur filerna ska vara strukturerade, hur namngivning och kommentarer skrivs och massvis av annat. (Kan vara bra att förtydliga att PEP8 efterföljs.)***
 
 
+
 ## Hur det fungerar (Usage)
 
 ***Använd detta utrymme för att visa användbara exempel av hur projektet kan användas. Skärmdumpar, kodexempel och demos passar in här. Du kan också länka till fler resurser, exempelvis en dokumentation.***
-
+![image](https://user-images.githubusercontent.com/95740886/169520528-214bbca0-fdd7-49c1-96b4-565d6c917329.png)
 
 ## Example (exempelkörning)
+![image](https://user-images.githubusercontent.com/95740886/169520762-6315eb41-6878-40b6-b019-11acf11ae316.png)
 
 ***Visa gärna, genom ett kodblock från din konsol, eller en bild, hur en exempelkörning kan gå till.***
 
@@ -86,17 +85,46 @@ Exempel:
 
 ***I changelogen ska varje rubrik vara en version. Under varje version bör du inkludera vad du lagt till eller ändrat på (added or changed) under en rubrik samt vad du tagit bort (removed) under en annan. Exempel: ***
 
-### Version 1.0.1
+### Version 1.0.1 
 
-#### Tillagt eller ändrat
+#### Struktur
+printtavla
+tavla
 
-- La till avsnitt om changelog
-- La till avsnitt om kodkonventioner
 
-#### Borttaget
+### Version 1.0.2 
 
-- Tog bort tidigare rubriker som inte såg bra ut.
-- Tog bort felaktig rubrik om innehållsförteckning
+#### checkwin
+    Checkwin in vertical,diognal and check draw
+   
+    
+### Version 1.0.3
+
+#### GAME
+play_game, now you can print and play the game,
+
+
+### Version 1.0.4 
+
+#### Klasser
+PLayer:klass, i created the srutchur for players when you play 2 persons.
+
+
+### Version 1.0.5
+
+#### filhantering
+
+Now you can really, play against your mate, and you can se some text that was in another page
+
+
+### Version 1.0.6
+
+#### Bot
+are you alone? no problem now we have created a bot that will go against you if you are alone
+
+
+
+
 
 ## Att bidra (Contribution)
 
