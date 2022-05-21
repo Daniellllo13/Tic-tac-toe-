@@ -63,7 +63,7 @@ def Checkwin(board):
         return Game
 
 
-def play_game(board, player):
+def play_game(board, player,):
     """This will be the whole game, or at least the funtioction that will allow you to make steps at all.
 
     Args:
@@ -74,33 +74,32 @@ def play_game(board, player):
         This funtiocs is really the whole game, it will ask you where you want to place your mark,  what your name is, but it will aslo check if 
         it is okay for you to mark the posistion, or if it is taken
     """
-
-    
-    if player == 1:
+    running = True
+    if player == 1: 
         mark = "X"
-        "This makes the first player X"
     elif player == 2:
         mark = "O"
-        "this makes the second player O"
-   
+    while running:
+        while True:
+            position = input("Välj din position från 1 - 9, OBS: obeservera att man börjar räkningen från högst upp i vänster!\nPosition: ")
+            try:
+                int(position)
+            except ValueError:
+                print("försök igen")
+                continue
+            if int(position) < 10 and int(position) > 0:
+                break
+            print("försök igen")
 
-        position = int(input("Välj din position från 1 - 9, OBS: obeservera att man börjar räkningen från högst upp i vänster!\nPosition: "))
-        if position < 10 and position > 0:
-            "Check if the posistion that you are trying to put, is greater then 0 and less then 10"
-            if board[position] == " ":
-                "Check if the posistion is taken"
-                update = {position : mark}
-                "Put the mark that you have in the posistion"
-                board.update(update)
-                "puts the mark in right posistion in the board"
-                print_board(board)
-                running = False
-            else:
-                print("Den positionen är redan tagen, försök igen...")
+        if board[int(position)] == " ":
+            update = {int(position) : mark}
+            board.update(update)
+            print_board(board)
+            running = False
         else:
-            print("Något gick fel, försök igen...")
-    return board
+            print("Den positionen är redan tagen, försök igen...")
 
+    return board
 def bot_play_game(board, player):
     """Sometimes you are alone, that is why we have created a bot in this function
 
@@ -121,22 +120,25 @@ def bot_play_game(board, player):
         
 
     while running:
-        if player ==1:
-            position = int(input("Välj din position från 1 - 9, OBS: obeservera att man börjar räkningen från högst upp i vänster!\nPosition: "))
-            if position < 10 and position > 0:
-                
-                if board[position] == " ":
-                 
-                    update = {position : mark}
-                  
-                    board.update(update)
-                    
-                    print_board(board)
-                    running = False
-                else:
-                    print("Den positionen är redan tagen.")
+        if player == 1:
+            while True:
+                position = input("Välj din position från 1 - 9, OBS: obeservera att man börjar räkningen från högst upp i vänster!\nPosition: ")
+                try:
+                    int(position)
+                except ValueError:
+                    print("försök igen")
+                    continue
+                if int(position) < 10 and int(position) > 0:
+                    break
+                print("försök igen")
+
+            if board[int(position)] == " ":
+                update = {int(position) : mark}
+                board.update(update)
+                print_board(board)
+                running = False
             else:
-                 print("Något gick fel, försök igen...")
+                print("Den positionen är redan tagen, försök igen...")
         else:
             
             position = random.randint(0,9)
@@ -165,6 +167,7 @@ def main():
     board_keys = []
     for keys in board:
         board_keys.append(keys)
+
 
     running = 1
     player = 1
@@ -200,7 +203,7 @@ def main():
             elif player == 1:
                 print("The bot won!")
         elif len(players) == 2:
-            player -= 1
+            player -= 2
             print(f"Player {players[player]} won!")
         
 main()

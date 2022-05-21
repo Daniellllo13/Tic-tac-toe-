@@ -11,18 +11,22 @@ class Player:
         players = []
         Wins = 0
         while True:
-            counter = (int(input("Hur många är ni som ska spela detta spelet"))) 
-            if counter == 1 or counter == 2:
-                for _ in range(counter):
-                    #här loopar jag frågan så många gånger det finns spelare
-                    player_name = input("eran namn:")
-                    players.append(player_name)
-                    Player(player_name, Wins)
-                return players
-            elif counter != 1 or counter !=2: 
-                print("Dubbelkolla att du följer instruktionerna fullt ut")
-            else:
-                print("Dubbelkolla att ni är max 2 och minst 1 ")
+            counter = input("Hur många är ni som ska spela detta spelet")
+            try:
+                int(counter)
+            except ValueError:
+                print("försök igen")
+                continue
+            if int(counter) == 1 or int(counter) == 2:
+                break
+
+        for _ in range (int(counter)):
+            #här loopar jag frågan så många gånger det finns spelare
+            player_name = input("eran namn:")
+            players.append(player_name)
+            Player(player_name, Wins)
+        return players
+            
 
 
 
