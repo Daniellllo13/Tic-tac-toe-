@@ -108,7 +108,7 @@ play_game is just the the name of the function. Samething here we need somthing 
 
 ### Version 1.0.4 
 
-#### Klasser
+#### Classes
 class Player,
 
 this class, is to know how much you are, and to put you on right position, first player: Daniel second player: Nicklas. Daniel = x nicklas = O. That is just and example of what the class do. But it really do more then that. 
@@ -123,7 +123,7 @@ I use two diffrent file management. The first one is just import from another fi
 ### Version 1.0.6 
 
 #### Bot
-are you alone? no problem now we have created a bot that will play against you if you are alone
+Are you alone? no problem now we have created a bot that will play against you if you are alone
 
 
 ## Att bidra (Contribution)
