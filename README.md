@@ -81,45 +81,49 @@ Exempel:
 
 ### Version 1.0.1 
 
-#### Struktur
-printtavla
-tavla
+#### structure
+
+print_board
+board 
+this is the two tic-tac-toe board that i added from the beginnning. board is like a name of the list that containts all keys that mean the postistion, from 1 - 9. While the print_board is just the function where the variable (board) is located. The reason of why i have the function is beacuse i will recall board for every features that is happining in the game. 
 
 
 ### Version 1.0.2 
 
 #### checkwin
-    Checkwin in vertical and diognal ways 
+    Check_win in vertical and diognal ways 
     
    checkdraw
+   
+   check_win is just the name of the function. samething here i have this function to just recall for every features that is done in the game. 
    
     
 ### Version 1.0.3
 
 #### GAME
-play_game, now you can print and play the game,
+play_game
+
+play_game is just the the name of the function. Samething here we need somthing to reacall. play_game contains everything that will make the game playable
 
 
 ### Version 1.0.4 
 
 #### Klasser
-PLayer:klass, i created the srutchur for players when you play 2 persons.
+class Player,
+
+this class, is to know how much you are, and to put you on right position, first player: Daniel second player: Nicklas. Daniel = x nicklas = O. That is just and example of what the class do. But it really do more then that. 
 
 
 ### Version 1.0.5
 
-#### filhantering
+#### file management
 
-Now you can really, play against your mate, and you can se some text that was in another page
+I use two diffrent file management. The first one is just import from another file named (klassen) Second one is the file management that is used to read lines
 
-
-### Version 1.0.6
+### Version 1.0.6 
 
 #### Bot
-are you alone? no problem now we have created a bot that will go against you if you are alone
-
-
-
+are you alone? no problem now we have created a bot that will play against you if you are alone
 
 
 ## Att bidra (Contribution)
