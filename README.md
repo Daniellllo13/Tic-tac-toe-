@@ -12,17 +12,16 @@ Exempel på README
 # Tutorial to a Readme (Titel på ditt projekt)
 Tic-tac-toe 
 ## Description (Beskrivning)
-I'll create a tic-tac-toe that gives you 2 choices whether you meet your friend or a bot. I will make use of everything I have learned during the year of programming.
+I Will make tic-tac-toe game that you can play regardless if you are alone or with frineds. You will have two choices whether you meet your mate or you can go against a bot. You will be able to play whenever you feel to, the instructions are going to be easy to understand. I will use all experience that i have gained during this year of coding, I will se what iam capable of, can i really do this game good. I will try to make this game funny, and without any problems, you will not have to check who won, the game will do it for you. Your job is just to think of your next step.
 ***Här bör du kort förklara vilket eller vilka språk programmet är skrivet i samt vad syftet med projektet är.***
-Python and only python. I will test myself. How much have i really learn this year? Or how much do i understand? That is what iam going to test.
-
+I have answerd this question above this one. 
 
 
 ## Technology/Languages/Built with (Teknologier/Språk/Byggt med - välj en)
 
 ***Här kan du beskriva vilka språk som driver vilka delar av projektet, exempelvis att du skrivit frontend med JavaScript och Python för backend. Det kan även vara nyttigt att berätta vilka ramverk eller bibliotek du använt här för de olika delarna. För exemplena givna är React (för JS) och Flask (Python) bra att nämna. Utelämna add-ons eller plugins, lämna dessa till Acknowledgements.***
 
-I have only used python, therefore no other languages ​​are involved
+I have only used python, therefore no other languages ​​are involved. It was really not requierd of other languageses.
 
 
 ## Requirements/Prerequisites (Krav)
@@ -35,23 +34,16 @@ Only python 3.7 + is requierd to make my code process
 
 ***För att köra programmet listar du här vad som behövs och hur det installeras. Exempel:***
 
-Exempel 1: 
 
 1. Klona repot
 ```cmd
-    git clone https://github.com/ditt_anv/reponamn
+    git clone https://github.com/Daniellllo13/Tic-tac-toe
 ```
-2. import random 
+2. import random, all you need to do is to wirte the same sentence in top of your code 
 
-Exempel 2:
+3. import from klassen import Player, you need another file that have the name "klassen" and you can find the code of klassen in my github https://github.com/Daniellllo13/Tic-tac-toe, and just klick on klassen. put the same sentence in the top of the code. 
 
-Detta projekt är testat på Python 3.7+. För att installera Python kan du besöka (https://www.python.org/downloads/)[följande länk för senaste versionen.]
 
-Programmet kräver även att biblioteket Flask samt pygame är installerade. För att installera krävs python 3.7+ installerat, följt av att följande kodrader skrivs i terminalen: 
-
-```cmd
-pip install Flask
-pip install pygame
 ```
 
 ## Code conventions (Kodkonvention)
@@ -73,9 +65,11 @@ pip install pygame
 ***Det kan vara nyttigt att få andra som läser om projektet att få veta vad du saknar just nu i programmet. Gör detta gärna genom en lista där färdiga saker strukits över.***
 Exempel: 
 
-- [x] Make the prgoress in grapgics 
+- [x] Make the same game in graphics 
 - [x] Make a more advanced bot
+  [x] Make more choices, if the player is good, then put him against a good bot. But if he is bad, put him against a bot that fit more 
   [X] make the game in English
+  
 
 ## Changelog
 
