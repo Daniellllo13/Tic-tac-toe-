@@ -21,7 +21,7 @@ class Player:
                 break
 
         for _ in range (int(counter)):
-            #här loopar jag frågan så många gånger det finns spelare
+            "here I loop the question as many times as there are players"
             player_name = input("eran namn:")
             players.append(player_name)
             Player(player_name, Wins)

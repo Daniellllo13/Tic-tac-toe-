@@ -12,7 +12,7 @@ import random
 def print_board(board):
             """ It is the board that is going to be recalled for every steps that is taken in this game. wwhy? it will be easier and faster
          Args:
-        board (_any_): it makes it posible to use it as the name of the list.
+        board (_dict_): it makes it posible to use it as the name of the list.
             """
     
             print(board[1] + '|' + board[2] + '|' + board[3])
@@ -28,7 +28,7 @@ def print_board(board):
 def Checkwin(board):
         """ This function will check who won, in vertical and diagonal it will also check if the game is ended in draw
      Args:
-        board (_any_): it makes it posible to use it as the name of the list.
+        board (_dict_): it makes it posible to use it as the name of the list.
         """
         win = 0
         draw = -1
@@ -67,8 +67,8 @@ def play_game(board, player,):
     """This will be the whole game, or at least the funtioction that will allow you to make steps at all.
 
     Args:
-        board (any): _this will allow us to use the the the variable in this function.
-        player (any): same thing here, this will allow us to use the variable in this function
+        board (dict): _this will allow us to use the the the variable in this function.
+        player (int): same thing here, this will allow us to use the variable in this function
 
     Returns:
         This funtiocs is really the whole game, it will ask you where you want to place your mark,  what your name is, but it will aslo check if 
@@ -104,8 +104,8 @@ def bot_play_game(board, player):
     """Sometimes you are alone, that is why we have created a bot in this function
 
     Args:
-        board (any): Allows us again to use the variable
-        player (any): Same thing as upper.
+        board (dict): Allows us again to use the variable
+        player (int): Same thing as upper.
 
     Returns:
         _type_: it will return a decent bot, that will join you for some fun.
@@ -125,7 +125,9 @@ def bot_play_game(board, player):
                 position = input("Välj din position från 1 - 9, OBS: obeservera att man börjar räkningen från högst upp i vänster!\nPosition: ")
                 try:
                     int(position)
+                    "makes the posistion int"
                 except ValueError:
+                    "look if you put a wrong value, in this case strings on the question"
                     print("försök igen")
                     continue
                 if int(position) < 10 and int(position) > 0:
@@ -164,9 +166,8 @@ def main():
                 7: ' ' , 8: ' ' , 9: ' ' }
                 
 
-    board_keys = []
-    for keys in board:
-        board_keys.append(keys)
+    
+    
 
 
     running = 1
@@ -185,6 +186,7 @@ def main():
     players = Player.add_players()
     "add_players is an list that contatin the players name, and now i make the verbitial become the name of the choosen names that players have wrote by themself"
     while Game == running:
+        "This while-loop checks if you are alone or if you play with a friend "
         if len(players) == 1:
             board = bot_play_game(board, player)
         elif len(players) == 2:
@@ -193,10 +195,11 @@ def main():
         if player == 3:
             player = 1
         Game = Checkwin(board)
-    
+  
     if Game == -1:
         print("The game ended in a draw")
     else:
+        "checks the values to see who won"
         if len(players) == 1:
             if player == 2:
                 print(f"{players[0]} won!")
